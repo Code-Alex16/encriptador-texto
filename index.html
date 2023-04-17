@@ -25,16 +25,14 @@
 
 		<!--entrada de datos del usuario (mensaje)-->
 		<div id="entrada">
-			<input type="text" id="in" placeholder="Ingrese su mensaje">
-			<div id="botones">
-				<button onclick ="encriptar()" id="encrip">Encriptar mensaje</button>
-				<button onclick ="desencriptar()" id="desencrip">Desencriptar mensaje</button>
-			</div>
+			<textarea type="text" id="in" placeholder="Ingrese su mensaje"></textarea>
+			<button onclick ="encriptar()" id="encrip">Encriptar mensaje</button>
+			<button onclick ="desencriptar()" id="desencrip">Desencriptar mensaje</button>
 		</div>
 
 		<!--salida del programa-->
 		<div id="salida">
-			<input type="text" id="out" placeholder="aun no se ha recibido un mensaje">
+			<textarea type="text" id="out" placeholder="sin resultados"></textarea>
 			<button onclick="copiar()" id="copiar">Copiar texto</button>
 		</div>
 	</main>
