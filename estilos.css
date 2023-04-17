@@ -4,34 +4,38 @@
 }
 
 body{
-    background: #A5CCCA;
+    background: #02484b;
     display: flex;
     
 }
-section#description{
-    position: relative;
-    background-color: lightseagreen;
+
+section{
+    position:relative;
     width: 1200px;
-    height: 150px;
+    height: 130px;
     top: 40px;
     left: 80px;
     border-radius: 25px;
+    border-width: 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
 }
 
 h1#tittle{
     position: relative;
-    width: 441.93px;
-    height: 53.43px;
-    left: 390px;
-    top: 10px;
-
-    font-family: 'Inder';
+    width: 800px;
+    height: 53px;
+    left: 150px;
+    top: -25px;
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
-
-    color: #9A3030;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 25px;
+    text-align: center;
+    color: #0e9281;
 }
 
 p#parrafo{
@@ -39,20 +43,20 @@ p#parrafo{
     width: 1000px;
     height: 80px;
     left: 40px;
-    top: 60px;
+    top: 40px;
     
-    font-family: 'Inder';
-    font-style: normal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     font-weight: 400;
     text-align: center;
     font-size: 18px;
     line-height: 18px;
+    background-color: transparent;
 
-    color: #000000;
+    color: #fff1f1;
 }
 
 div#entrada{
-    display: flex;
     position: absolute;
     width: 600px;
     height: 300px;
@@ -61,7 +65,6 @@ div#entrada{
 }
 
 div#salida{
-    display: flex;
     position: absolute;
     width: 350px;
     height: 300px;
@@ -69,39 +72,66 @@ div#salida{
     top: 170px;
 }
 
-input#in{
-    position: absolute;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    background-color: #f3f5fc;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
+textarea#in{
+    position: relative;
     width: 600px;
-    height: 284px;
-    left: 50px;
-    top: 50px;
-
-    border-color: black;
-    background: #FFFFFF;
-    border-radius: 25px;
+    height: 300px;
+    top: 30px;
+    left: 30px;
+    background-color:  rgb(235, 248, 250);
+    border-radius: 15px;
+    color: black;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    resize: none;
+    outline: none;
 }
 
-input::placeholder{
-    color: rgba(101, 98, 255, 0.801);
-    font-family: "Inter";
-    font-style: normal;
+
+textarea#out{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: 30px;
+    left: 5px;
+    background-color: rgb(235, 248, 250);
+    border-radius: 15px;
+    color: black;
     font-size: 25px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+    outline: none;
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+  
+textarea::-webkit-scrollbar-track {
+    background: lightgrey;
+}
+  
+textarea::-webkit-scrollbar-thumb {
+    background: darkblue;
+    border-radius: 4px;
+}
+  
+textarea::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue-300);
+}
+
+textarea::placeholder{
+    color: #0a3871;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
     text-align: center;
 }
-
-input#out{
+/*
+.out{
     position: absolute;
     font-family: "Inter";
     font-style: normal;
@@ -115,21 +145,23 @@ input#out{
     align-items: flex-start;
     padding: 10px;
     gap: 10px;
-    width: 400px;
-    height: 284px;
+    width: 100%;
+    height: 100%;
     left: 40px;
     top: 50px;
+    outline: none;
+    display: inline-block;
 
     background: #FFFFFF;
     border-color: black;
     border-radius: 25px;
 }
-
+*/
 button#encrip{
-    position: relative;
+    position: absolute;
     width: 250px;
     height: 50px;
-    left: 80px;
+    left: 50px;
     top: 350px;
     text-align: center;
     justify-content: center;
