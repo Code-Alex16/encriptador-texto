@@ -1,5 +1,5 @@
 function validacion_texto() {
-	const valido = [' ','a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'];
+	const valido = [' ','.',',','a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'];
 	let entrada = document.getElementById('in').value;
 	let letra = '';
 	var dato = false;
