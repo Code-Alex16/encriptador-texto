@@ -1,0 +1,41 @@
+<!Doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Encripter</title>
+	<script src="code.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<!--parte principal del programa-->
+	<main id="container">
+		<!--descripcion sobre el usuo al usuario y nombre del programa-->
+		<section id="description">
+			<h1 id="tittle">ENCRIPTADOR DE TEXTO</h1>
+			<p id="parrafo">
+				encriptador de texto desarrollado con html, personalizado con css y 
+				agregando funcionalidades con <strong>Javascript</strong> ejemplo de uso:<br>
+				ingresas una palabra o parrafo de un texto donde se solicita y escoger una de las opciones:
+				ejemplo:<br>
+				se ingreso la palabra gato, se dio click en el boton encriptar su resultado en pantalla sera:
+				gaitober.<br>
+				<strong>restricciones: </strong> no se permite caracteres especiales o con acentos (!,@,etc..),
+				ademas de palabras en mayusculas.
+			</p>
+		</section>
+
+		<!--entrada de datos del usuario (mensaje)-->
+		<div id="entrada">
+			<input type="text" id="in" placeholder="Ingrese su mensaje">
+			<div id="botones">
+				<button onclick ="encriptar()" id="encrip">Encriptar mensaje</button>
+				<button onclick ="desencriptar()" id="desencrip">Desencriptar mensaje</button>
+			</div>
+		</div>
+
+		<!--salida del programa-->
+		<div id="salida">
+			<input type="text" id="out" placeholder="aun no se ha recibido un mensaje">
+			<button onclick="copiar()" id="copiar">Copiar texto</button>
+		</div>
+	</main>
+</body>
